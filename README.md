@@ -1,20 +1,13 @@
-    
-Create the layout displayed in sass_exercise_1_layout.jpg using the rules nesting and the Sass Variables.
 
-You should use the following colors:
-* red 
-* blue
-* green
+Create the layout displayed in the picture. Try to use a mixin in order to apply the style of the `article` tags. The mixin should take in 3 parameters:
+1. color
+2. border-color
+3. font-size
+
+The font size should also have a default value equal to 1rem. The footer font-size is equal to 24px.
 
 **Suggestion:**
 
-$color-primary: red;
-$color-tertiary: green;
-
-.exercise {
-border: 1px solid $color-primary;
-
-    .exercise-title {
-        color: $color-tertiary;
-    }
-}
+@mixin article-card($color, ...) {
+color: $color;
+...

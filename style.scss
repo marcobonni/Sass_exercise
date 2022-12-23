@@ -1,29 +1,46 @@
-$color-primary: red;
-$color-secondary: blue;
-$color-tertiary: green;
+@import "variables";
+@mixin article-style($color, $border-color, $font-size) {
+  color: $color;
+  border-color: $border-color;
+  font-size: $font-size;
+}
 body {
     border: 1px $color-primary solid;
 }
-section {
-    display: flex;
-    padding: 10px;
-    article {
-        border: 1px solid $color-tertiary;
-        justify-content: space-evenly;
-        padding: inherit;
-        .article1, .article3 {
-            color: $color-secondary;
-        }
-        .article2, .article4 {
-            color: $color-primary;
-        }
-    }
-}
 div {
     h1 {
-    color: $color-tertiary;
-    text-align: center;
-    text-decoration: underline;
-    text-decoration-color: $color-secondary;
+        display: flex;
+        justify-content: center;
+        color: $color-tertiary;
+        text-decoration: underline;
+        text-decoration-color: $color-secondary;
+    }
+    .first {
+        display: flex;
+        padding: 10px;
+        article {
+            border: 1px solid $color-tertiary;
+            justify-content: space-evenly;
+            padding: inherit;
+            &:nth-child(odd) {
+                @include article-style($color-secondary, $color-tertiary, $font-size-body)
+            }
+            &:nth-child(even) {
+                @include article-style($color-primary, $color-tertiary, $font-size-body)
+            }
+        }
+    }
+    .second {
+        display: flex;
+        padding: 10px;
+        article {
+            border:1px solid $color-secondary;
+            flex: 1;
+            p {
+                display: flex;
+                justify-content: center;
+                @include article-style($color-tertiary, $color-secondary, $font-size-footer)
+            }
+        }
     }
 }

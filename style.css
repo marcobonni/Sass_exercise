@@ -2,27 +2,46 @@ body {
   border: 1px red solid;
 }
 
-section {
+div h1 {
+  display: flex;
+  justify-content: center;
+  color: green;
+  text-decoration: underline;
+  text-decoration-color: blue;
+}
+div .first {
   display: flex;
   padding: 10px;
 }
-section article {
+div .first article {
   border: 1px solid green;
   justify-content: space-evenly;
   padding: inherit;
 }
-section article .article1, section article .article3 {
+div .first article:nth-child(odd) {
   color: blue;
+  border-color: green;
+  font-size: 1rem;
 }
-section article .article2, section article .article4 {
+div .first article:nth-child(even) {
   color: red;
+  border-color: green;
+  font-size: 1rem;
 }
-
-div h1 {
+div .second {
+  display: flex;
+  padding: 10px;
+}
+div .second article {
+  border: 1px solid blue;
+  flex: 1;
+}
+div .second article p {
+  display: flex;
+  justify-content: center;
   color: green;
-  text-align: center;
-  text-decoration: underline;
-  text-decoration-color: blue;
+  border-color: blue;
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */
