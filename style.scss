@@ -6,14 +6,21 @@
 }
 body {
     border: 1px $color-primary solid;
+
 }
 div {
     h1 {
-        display: flex;
-        justify-content: center;
+        text-align: center;
         color: $color-tertiary;
         text-decoration: underline;
         text-decoration-color: $color-secondary;
+    }
+    h2 {
+        @extend h1;
+        padding: 1rem;
+        border: 1px $color-primary solid;
+        margin-left: 20%;
+        margin-right: 20%;
     }
     .first {
         display: flex;

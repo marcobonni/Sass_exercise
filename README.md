@@ -1,13 +1,12 @@
 
-Modify the exercise 2 code about mixin by creating a module for all declared variables.
-Then, create a module with a function. This function should accept a number as parameter and return the value converted into rem. 1rem is equal to 16px
-This function should be applied in the main stylesheet, so that the only sizing unit is rem.
+Modify the exercise 3 code about functions using the parent selector `&` for nested classes. Style the `h2` that will have the same rules of `h1`, and an additional 1rem padding and a red border. In order to style the `h1` and `h2` use the extend method. 
 
 **Suggestion:**
 
-@function rem(...
-@return calc(...
+%text {
+...
 }
 
-@use "functions" as f;
-...
+.h1-class {
+@extend %text;
+}

@@ -2,12 +2,17 @@ body {
   border: 1px red solid;
 }
 
-div h1 {
-  display: flex;
-  justify-content: center;
+div h1, div h2 {
+  text-align: center;
   color: green;
   text-decoration: underline;
   text-decoration-color: blue;
+}
+div h2 {
+  padding: 1rem;
+  border: 1px red solid;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 div .first {
   display: flex;
