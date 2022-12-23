@@ -1,13 +1,13 @@
 
-Create the layout displayed in the picture. Try to use a mixin in order to apply the style of the `article` tags. The mixin should take in 3 parameters:
-1. color
-2. border-color
-3. font-size
-
-The font size should also have a default value equal to 1rem. The footer font-size is equal to 24px.
+Modify the exercise 2 code about mixin by creating a module for all declared variables.
+Then, create a module with a function. This function should accept a number as parameter and return the value converted into rem. 1rem is equal to 16px
+This function should be applied in the main stylesheet, so that the only sizing unit is rem.
 
 **Suggestion:**
 
-@mixin article-card($color, ...) {
-color: $color;
+@function rem(...
+@return calc(...
+}
+
+@use "functions" as f;
 ...

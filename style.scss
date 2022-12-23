@@ -39,7 +39,7 @@ div {
             p {
                 display: flex;
                 justify-content: center;
-                @include article-style($color-tertiary, $color-secondary, $font-size-footer)
+                @include article-style($color-tertiary, $color-secondary, size_conversion_px_to_rem($font-size-footer))
             }
         }
     }
