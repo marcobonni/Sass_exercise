@@ -1,7 +1,6 @@
 body {
   border: 1px red solid;
 }
-
 div h1 {
   display: flex;
   justify-content: center;
