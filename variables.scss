@@ -6,5 +6,5 @@ $font-size-footer: 24px;
 
 @function size_conversion_px_to_rem ($size_in_px) {
     $rem-font-size: 16px; 
-    @return $size_in_px / $rem-font-size + rem;
+    @return calc($size-in-px / $rem-font-size)rem;
 }

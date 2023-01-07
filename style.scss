@@ -1,32 +1,32 @@
-@import "variables";
+@use "variables" as v;
 @mixin article-style($color, $border-color, $font-size) {
   color: $color;
   border-color: $border-color;
   font-size: $font-size;
 }
 body {
-    border: 1px $color-primary solid;
+    border: 1px v.$color-primary solid;
 }
 div {
     h1 {
         display: flex;
         justify-content: center;
-        color: $color-tertiary;
+        color: v.$color-tertiary;
         text-decoration: underline;
-        text-decoration-color: $color-secondary;
+        text-decoration-color: v.$color-secondary;
     }
     .first {
         display: flex;
         padding: 10px;
         article {
-            border: 1px solid $color-tertiary;
+            border: 1px solid v.$color-tertiary;
             justify-content: space-evenly;
             padding: inherit;
             &:nth-child(odd) {
-                @include article-style($color-secondary, $color-tertiary, $font-size-body)
+                @include article-style(v.$color-secondary, v.$color-tertiary, v.$font-size-body)
             }
             &:nth-child(even) {
-                @include article-style($color-primary, $color-tertiary, $font-size-body)
+                @include article-style(v.$color-primary, v.$color-tertiary, v.$font-size-body)
             }
         }
     }
@@ -34,12 +34,12 @@ div {
         display: flex;
         padding: 10px;
         article {
-            border:1px solid $color-secondary;
+            border:1px solid v.$color-secondary;
             flex: 1;
             p {
                 display: flex;
                 justify-content: center;
-                @include article-style($color-tertiary, $color-secondary, size_conversion_px_to_rem($font-size-footer))
+                @include article-style(v.$color-tertiary, v.$color-secondary, v.size_conversion_px_to_rem(v.$font-size-footer))
             }
         }
     }
