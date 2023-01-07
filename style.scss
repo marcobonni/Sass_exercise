@@ -4,20 +4,23 @@
   border-color: $border-color;
   font-size: $font-size;
 }
+%text {
+    color: v.$color-tertiary;
+    text-decoration: underline;
+    text-decoration-color: v.$color-secondary;
+    text-align: center;
+}
 body {
     border: 1px v.$color-primary solid;
 }
 div {
     h1 {
-        text-align: center;
-        color: v.$color-tertiary;
-        text-decoration: underline;
-        text-decoration-color: v.$color-secondary;
+        @extend %text;
     }
     h2 {
-        @extend h1;
+        @extend %text;
+        @extend body;
         padding: 1rem;
-        border: 1px v.$color-primary solid;
         margin-left: 20%;
         margin-right: 20%;
     }

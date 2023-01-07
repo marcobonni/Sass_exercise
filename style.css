@@ -1,15 +1,16 @@
-body {
-  border: 1px red solid;
-}
-div h1, div h2 {
-  text-align: center;
+div h2, div h1 {
   color: green;
   text-decoration: underline;
   text-decoration-color: blue;
+  text-align: center;
 }
+
+body, div h2 {
+  border: 1px red solid;
+}
+
 div h2 {
   padding: 1rem;
-  border: 1px red solid;
   margin-left: 20%;
   margin-right: 20%;
 }
