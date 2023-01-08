@@ -3,7 +3,11 @@ $color-secondary: blue;
 $color-tertiary: green;
 $font-size-body: 1rem;
 $font-size-footer: 24px;
-$rem-font-size: 16px; 
+$rem-font-size: 16px;
+$box-height: 45px;
+$box-width: $box-height;
+$base-background-color: #fff;
+$text-color: #000;
 @function size_conversion_px_to_rem ($size_in_px) {
     @return calc($size-in-px / $rem-font-size)rem;
 }

@@ -33,15 +33,115 @@ div .first article:nth-child(even) {
   border-color: green;
   font-size: 1rem;
 }
-div .second {
+div .second_section {
+  display: flex;
+  justify-content: space-around;
+}
+div .second_section .fs-1rem {
+  font-size: 1rem;
+}
+div .second_section .fs-2rem {
+  font-size: 2rem;
+}
+div .second_section .fs-3rem {
+  font-size: 3rem;
+}
+div .second_section div {
+  border: 1px red solid;
+  height: 45px;
+  width: 45px;
+}
+div .second_section div:nth-child(1) {
+  background-color: #f2f2f2;
+  color: #0d0d0d;
+}
+div .second_section div:nth-child(2) {
+  background-color: #e6e6e6;
+  color: #1a1a1a;
+}
+div .second_section div:nth-child(3) {
+  background-color: #d9d9d9;
+  color: #262626;
+}
+div .second_section div:nth-child(4) {
+  background-color: #cccccc;
+  color: #333333;
+}
+div .second_section div:nth-child(5) {
+  background-color: #bfbfbf;
+  color: #404040;
+}
+div .second_section div:nth-child(6) {
+  background-color: #b3b3b3;
+  color: #4d4d4d;
+}
+div .second_section div:nth-child(7) {
+  background-color: #a6a6a6;
+  color: #595959;
+}
+div .second_section div:nth-child(8) {
+  background-color: #999999;
+  color: #666666;
+}
+div .second_section div:nth-child(9) {
+  background-color: #8c8c8c;
+  color: #737373;
+}
+div .second_section div:nth-child(10) {
+  background-color: gray;
+  color: gray;
+  background-color: blue;
+  color: red;
+}
+div .second_section div:nth-child(11) {
+  background-color: #737373;
+  color: #8c8c8c;
+}
+div .second_section div:nth-child(12) {
+  background-color: #666666;
+  color: #999999;
+}
+div .second_section div:nth-child(13) {
+  background-color: #595959;
+  color: #a6a6a6;
+}
+div .second_section div:nth-child(14) {
+  background-color: #4d4d4d;
+  color: #b3b3b3;
+}
+div .second_section div:nth-child(15) {
+  background-color: #404040;
+  color: #bfbfbf;
+}
+div .second_section div:nth-child(16) {
+  background-color: #333333;
+  color: #cccccc;
+}
+div .second_section div:nth-child(17) {
+  background-color: #262626;
+  color: #d9d9d9;
+}
+div .second_section div:nth-child(18) {
+  background-color: #1a1a1a;
+  color: #e6e6e6;
+}
+div .second_section div:nth-child(19) {
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+}
+div .second_section div:nth-child(20) {
+  background-color: black;
+  color: white;
+}
+div .third_section {
   display: flex;
   padding: 10px;
 }
-div .second article {
+div .third_section article {
   border: 1px solid blue;
   flex: 1;
 }
-div .second article p {
+div .third_section article p {
   display: flex;
   justify-content: center;
   color: green;

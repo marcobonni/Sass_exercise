@@ -39,7 +39,32 @@ div {
             }
         }
     }
-    .second {
+    .second_section {
+        display: flex;
+        justify-content: space-around;
+        @for $i from 1 through 3 {
+            .fs-#{$i}rem {
+                font-size: #{$i}rem;
+            }
+
+        }
+        div {
+            @for $l from 1 through 20 {
+                &:nth-child(#{$l}) {
+                    background-color: darken(v.$base-background-color, $l * 5);
+                    color: lighten(v.$text-color, $l * 5);
+                @if $l == 10 {
+                    background-color: v.$color-secondary;
+                    color: v.$color-primary;
+                }
+                }
+            }
+            border: 1px v.$color-primary solid;
+            height: 45px;
+            width: 45px;
+        }
+    }
+    .third_section {
         display: flex;
         padding: 10px;
         article {
